@@ -1,0 +1,9 @@
+# Nhật ký quyết định (Decision Log)
+
+| Mã | Ngày | Quyết định | Lý do | Người duyệt |
+|---|---|---|---|---|
+| D0.1 | 14/11/2026 | Làm mã nguồn từ đầu (chưa có code) | Báo cáo môn học chỉ có tài liệu quản trị; số liệu tiến độ chương 4 là giả lập | PO |
+| D0.2 | 14/11/2026 | Stack: React + Vite + TypeScript + Tailwind + shadcn/ui + Firebase + Gemini + Google Maps | Giữ stack báo cáo, bổ sung TypeScript và shadcn/ui để AI code chính xác hơn | PO |
+| D0.3 | 14/11/2026 | MVP trước: M1, M2, M3, M5, M7; sau đó M6, M8, M4, M9, M10, M11 | Giảm rủi ro, có sản phẩm demo sớm | PO |
+| D0.4 | 14/11/2026 | Tài liệu bằng tiếng Việt, giữ thuật ngữ tiếng Anh; dành cho Claude Code | Theo yêu cầu PO | PO |
+| D1–D8 | 14/11/2026 | Các quyết định của giai đoạn Research | Xem `docs/01-research/research.md` §2 | Chờ duyệt |
