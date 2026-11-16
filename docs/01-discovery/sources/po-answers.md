@@ -27,3 +27,5 @@ note: Ghi lại câu trả lời của PO. Câu trả lời nào trở thành qu
 | 16/11/2026 | Kiến trúc skill | Theo cấu trúc skill `run-product-discovery` của Codex: một skill điều phối, các module theo chủ đề, câu hỏi bám bằng chứng, V1 sớm rồi cải thiện. |
 | 16/11/2026 | Chuẩn JTBD (G-4) | JTBD cổ điển: "Khi [tình huống], tôi muốn [việc], để [kết quả]". Không dùng AJTBD. |
 | 16/11/2026 | Kế hoạch thu tiền (G-2) | Freemium: miễn phí tính năng cơ bản, có gói Premium trả phí. |
+| 16/11/2026 | Khảo sát người dùng (G-5) | Chưa khảo sát hay phỏng vấn người dùng thật. |
+| 16/11/2026 | Ý tưởng tính năng | Người dùng có thể để lại comment dưới mỗi chuyến đi. (Chưa rõ: comment trên trang chia sẻ công khai hay trong nhóm đi cùng; thuộc MVP hay sau MVP.) |
