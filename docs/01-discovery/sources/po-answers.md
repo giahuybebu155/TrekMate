@@ -25,3 +25,4 @@ note: Ghi lại câu trả lời của PO. Câu trả lời nào trở thành qu
 | 14/11/2026 | Nền tảng | Triển khai website trước. |
 | 14/11/2026 | Phong cách thị giác (cho Giai đoạn 2) | Tươi trẻ, nhiều ảnh; xanh lá rừng + vàng nắng; chỉ chế độ sáng, token dark để sẵn; chưa có Figma. |
 | 16/11/2026 | Kiến trúc skill | Theo cấu trúc skill `run-product-discovery` của Codex: một skill điều phối, các module theo chủ đề, câu hỏi bám bằng chứng, V1 sớm rồi cải thiện. |
+| 16/11/2026 | Chuẩn JTBD (G-4) | JTBD cổ điển: "Khi [tình huống], tôi muốn [việc], để [kết quả]". Không dùng AJTBD. |
