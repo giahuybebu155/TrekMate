@@ -10,3 +10,4 @@
 | Q1–Q5 | 14/11/2026 | Chi phí chia đều/người; Email+Google; link chỉ xem + Web Share; in-app + email; 8 điểm đến seed | Giữ MVP gọn, chi phí 0đ | PO ✅ |
 | D7 (sửa) | 14/11/2026 | Làm website trước, desktop-first, responsive; app mobile để sau | Theo yêu cầu PO | PO ✅ |
 | D-JTBD | 16/11/2026 | Dùng JTBD cổ điển ("Khi…, tôi muốn…, để…"), không dùng AJTBD | Đơn giản, đủ để truy vết tính năng cho đồ án | PO ✅ |
+| D-BM | 16/11/2026 | Mô hình kinh doanh Freemium: miễn phí cơ bản, gói Premium trả phí. Ranh giới Free/Premium sẽ chốt trong Blueprint | Theo lựa chọn PO (G-2) | PO ✅ |
