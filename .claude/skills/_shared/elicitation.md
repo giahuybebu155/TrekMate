@@ -1,4 +1,6 @@
-# Elicitation: hỏi từ bằng chứng hiện có
+# Elicitation: hỏi từ bằng chứng hiện có (dùng chung)
+
+Áp dụng cho mọi skill giai đoạn. "Hàng đợi câu hỏi" là file gaps mà `SKILL.md` của giai đoạn khai báo.
 
 Mục tiêu của việc hỏi là **thay đổi được phân tích**, không phải điền đủ biểu mẫu. Mỗi câu hỏi tốn sự chú ý của Product Owner; chỉ hỏi khi câu trả lời có giá trị hơn một bản nháp có nguồn.
 
@@ -6,14 +8,14 @@ Mục tiêu của việc hỏi là **thay đổi được phân tích**, không 
 
 Chỉ hỏi khi **cả ba** điều sau đều đúng:
 
-1. **Chưa có câu trả lời.** Đã kiểm tra `sources/` (đặc biệt `po-answers.md`), `decision-log.md` và các file chủ đề hiện có.
+1. **Chưa có câu trả lời.** Đã kiểm tra nguồn của giai đoạn, `docs/00-process/po-answers.md`, `decision-log.md`, đầu ra của giai đoạn trước và các file chủ đề hiện có.
 2. **Câu trả lời có thể đổi kết luận.** Nếu mọi câu trả lời hợp lý đều dẫn tới cùng một bản nháp, đừng hỏi; ghi giả định `A-n` và viết tiếp.
 3. **Không tự suy ra được một cách có trách nhiệm.** Nếu suy luận từ nguồn đủ chắc (`[INF]` mức tin cậy trung bình trở lên), dùng suy luận và để PO sửa khi duyệt.
 
 Không hỏi để:
 - Xác nhận điều đã có trong nguồn.
-- Xin phép viết bản nháp. Cứ viết V1 trước (xem SKILL.md).
-- Lấy thông tin mà web search tìm được (đối thủ, quy mô thị trường, giá dịch vụ). Tự tìm, ghi `[DOC: web – …]`.
+- Xin phép viết bản nháp. Cứ viết V1 trước (xem SKILL.md của giai đoạn).
+- Lấy thông tin mà web search hoặc tài liệu kỹ thuật chính thức tìm được (đối thủ, quy mô thị trường, giá dịch vụ, hướng dẫn thiết kế, giới hạn API). Tự tìm, ghi `[DOC: web – …]`.
 
 ## 2. Tìm câu hỏi từ đâu
 
@@ -36,7 +38,7 @@ Câu hỏi mẫu trong mỗi module chỉ là gợi ý suy nghĩ. Không chép n
 - **Nói rõ hậu quả.** "Nếu chọn A thì Blueprint bỏ phần nguồn thu; nếu B thì cần thêm mục hoa hồng đặt phòng."
 - **Không dẫn dắt.** Không viết câu hỏi để PO xác nhận đề xuất của agent.
 
-Mẫu ghi trong `discovery-gaps.md`:
+Mẫu ghi trong hàng đợi câu hỏi:
 
 | # | Câu hỏi | Chủ đề bị ảnh hưởng | Vì sao quan trọng | Hỏi ngày |
 |---|---|---|---|---|
@@ -44,15 +46,15 @@ Mẫu ghi trong `discovery-gaps.md`:
 
 ## 4. Bao nhiêu câu, khi nào gửi
 
-- **Sau V1:** gửi tối đa **3 câu** có ảnh hưởng lớn nhất. Các câu còn lại vẫn nằm trong `discovery-gaps.md`, xếp theo mức ảnh hưởng.
+- **Sau V1:** gửi tối đa **3 câu** có ảnh hưởng lớn nhất. Các câu còn lại vẫn nằm trong hàng đợi câu hỏi, xếp theo mức ảnh hưởng.
 - **Mỗi vòng sau:** tối đa 3 câu mới, chỉ những câu phát sinh từ câu trả lời trước hoặc từ mâu thuẫn mới.
 - **Khi đang cập nhật một chủ đề:** chỉ hỏi câu thuộc chủ đề đó hoặc phụ thuộc trực tiếp.
 - Nếu PO vắng mặt (chạy theo lịch, không ai trả lời), không chờ: viết tiếp với giả định rõ ràng và để câu hỏi trong hàng đợi.
 
 ## 5. Xử lý câu trả lời
 
-1. Ghi nguyên ý vào `sources/po-answers.md` kèm ngày. Đây là `[STK]`.
-2. Xoá câu hỏi khỏi mục "Đang chờ trả lời" trong `discovery-gaps.md`.
+1. Ghi nguyên ý vào `docs/00-process/po-answers.md` kèm ngày. Đây là `[STK]`.
+2. Xoá câu hỏi khỏi mục "Đang chờ trả lời" trong hàng đợi câu hỏi.
 3. Nếu câu trả lời là một lựa chọn phạm vi hoặc hướng đi, đề xuất PO ghi vào `decision-log.md`. Chỉ sau khi ghi thì mới dùng thẻ `[DEC]`.
 4. Sửa đúng các chủ đề bị ảnh hưởng, rồi chạy kiểm tra nhất quán của `synthesis-contract.md` §6.
 5. Câu trả lời mơ hồ hoặc mâu thuẫn với quyết định cũ: không tự diễn giải. Hỏi lại một câu làm rõ, ngắn hơn câu cũ.

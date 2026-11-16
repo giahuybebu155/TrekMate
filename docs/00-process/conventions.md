@@ -1,6 +1,6 @@
 # Quy ước tài liệu
 
-> Áp dụng cho mọi tài liệu trong `docs/`. Quy tắc về bằng chứng và loại nguồn nằm ở `.claude/skills/trekmate-discovery/synthesis-contract.md`, không lặp lại ở đây.
+> Áp dụng cho mọi tài liệu trong `docs/`. Quy tắc về bằng chứng và loại nguồn nằm ở `.claude/skills/_shared/synthesis-contract.md`, không lặp lại ở đây.
 
 ## Front matter
 

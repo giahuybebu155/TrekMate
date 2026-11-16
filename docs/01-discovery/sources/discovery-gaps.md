@@ -20,7 +20,7 @@ note: Hàng đợi câu hỏi duy nhất của Discovery. Chỉ ghi câu hỏi m
 
 ## Đã trả lời
 
-Xem `po-answers.md`.
+Xem `docs/00-process/po-answers.md`.
 
 ## Đã được PO chấp nhận để trống
 
