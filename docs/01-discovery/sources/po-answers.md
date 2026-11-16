@@ -29,3 +29,6 @@ note: Ghi lại câu trả lời của PO. Câu trả lời nào trở thành qu
 | 16/11/2026 | Kế hoạch thu tiền (G-2) | Freemium: miễn phí tính năng cơ bản, có gói Premium trả phí. |
 | 16/11/2026 | Khảo sát người dùng (G-5) | Chưa khảo sát hay phỏng vấn người dùng thật. |
 | 16/11/2026 | Ý tưởng tính năng | Người dùng có thể để lại comment dưới mỗi chuyến đi. (Chưa rõ: comment trên trang chia sẻ công khai hay trong nhóm đi cùng; thuộc MVP hay sau MVP.) |
+| 16/11/2026 | Comment (G-6) | Cả hai, đều trong MVP: (1) M4 Đánh giá địa điểm (sao + nhận xét) như báo cáo; (2) comment dưới mỗi chuyến đi. |
+| 16/11/2026 | Nền tảng (sửa D7) | Website responsive, thiết kế mobile-first; không chuyển sang desktop-first. Không làm app riêng. |
+| 16/11/2026 | Giai đoạn 2 | Prototype là file HTML/React trong repo; elicitation và synthesis-contract dùng chung cho mọi giai đoạn; bản nháp design cũ đưa vào sources. |
