@@ -1,6 +1,6 @@
 # 01 – Research & Discovery: TrekMate
 
-> Giai đoạn 1/5 · Trạng thái: **Bản nháp chờ duyệt** · Cập nhật: 14/11/2026
+> Giai đoạn 1/5 · Trạng thái: **🔁 Đang mở rộng thành bộ tài liệu PM chi tiết** · Cập nhật: 14/11/2026
 > Nguồn đầu vào: `F5_BaoCao_final_v1.docx`, `Scope1.docx`, `UpdateTrekMate_WBS.xlsx`, `TrekMate_Chuong4_DieuHanhDuAn_v2.docx` + khảo sát đối thủ trên web.
 > Tài liệu này là **nguồn sự thật (source of truth)** cho các giai đoạn sau. AI coding agent phải đọc file này trước khi đọc PRD.
 
@@ -22,7 +22,7 @@
 | D4 | Nguồn POI | **Kết hợp**: Firestore (Admin quản lý) là nguồn chính; Google Places bổ sung ảnh, giờ mở cửa, toạ độ, rating | Admin kiểm soát chất lượng; Places giảm công nhập tay |
 | D5 | AI grounding | Gemini **chỉ được chọn POI từ danh sách ứng viên** lấy trong DB; được phép đề xuất “điểm ngoài danh sách” nhưng phải gắn cờ `unverified` | Giảm rủi ro R1 (AI trả kết quả sai, bịa địa điểm) |
 | D6 | Persona ưu tiên | P1 Nhóm bạn chia chi phí · P2 Sinh viên tiết kiệm · P3 Dân văn phòng đi cuối tuần | Theo lựa chọn của PO |
-| D7 | Nền tảng | Web responsive, **mobile-first** (dùng khi đang đi) | Hạn chế 5.2 của báo cáo: chưa có app mobile |
+| D7 | Nền tảng | **Website trước, desktop-first** (thiết kế chính 1280–1440px), responsive để vẫn dùng được trên điện thoại; app mobile để sau | Theo yêu cầu PO (14/11/2026) |
 | D8 | Phương pháp phát triển | Chuyển từ Waterfall (báo cáo môn học) sang **Agile/Scrum, sprint 1 tuần**, MVP trước | Phù hợp vibe-code với AI: vòng ngắn, kiểm thử liên tục |
 
 ## 3. Persona
@@ -123,13 +123,15 @@ Mở lịch trình hôm nay → xem điểm tiếp theo → “Dẫn đường�
 | R7 | Security Rules lỏng gây lộ dữ liệu | Rules theo vai trò + test bằng Firebase Emulator trong CI |
 | R9 (mới) | Dữ liệu POI ít làm AI kém hữu ích | Seed POI cho 5–8 điểm đến trước Sprint 2; công cụ import từ Places cho Admin |
 
-## 10. Câu hỏi mở (sẽ chốt ở GĐ3 – PRD)
+## 10. Câu hỏi mở – đã chốt (14/11/2026)
 
-- **Q1:** Persona P1 cần **chia chi phí theo người**. MVP chỉ hiển thị “chi phí/người” (chia đều), hay làm luôn ghi chi tiêu thực tế + ai trả bao nhiêu (kiểu Splitwise)? → ảnh hưởng phạm vi M6.
-- **Q2:** Đăng nhập: chỉ Email/Password + Google, hay thêm số điện thoại (OTP tốn phí SMS)?
-- **Q3:** Chia sẻ MXH (M10): chỉ link chia sẻ + nút Share của trình duyệt (Web Share API), hay cần ảnh thẻ lịch trình để đăng Instagram?
-- **Q4:** Thông báo (M11): in-app + email, hay cần web push (FCM)?
-- **Q5:** Danh sách 5–8 điểm đến seed ban đầu (gợi ý: Đà Nẵng, Hội An, Huế, Đà Lạt, Nha Trang, Phú Quốc, Hà Nội, Sa Pa).
+| Mã | Câu hỏi | Quyết định |
+|---|---|---|
+| Q1 | Chia chi phí nhóm | MVP: chỉ hiển thị **tổng chi phí và chi phí/người (chia đều theo số người)**. Ghi chi tiêu thực tế kiểu Splitwise để **sau MVP** |
+| Q2 | Đăng nhập | **Email/Password + Google Sign-In** (Firebase Auth). Không dùng OTP số điện thoại |
+| Q3 | Chia sẻ MXH (M10) | **Link chia sẻ chỉ xem** (không cần đăng nhập) + **Web Share API**, kèm Open Graph preview khi dán vào Zalo/Messenger/Facebook. Không làm ảnh thẻ Instagram ở MVP |
+| Q4 | Thông báo (M11) | **In-app (Firestore) + email** (Firebase Extension Trigger Email hoặc tương đương). Không dùng web push ở MVP |
+| Q5 | Điểm đến seed | Mặc định: Đà Nẵng, Hội An, Huế, Đà Lạt, Nha Trang, Phú Quốc, Hà Nội, Sa Pa (8 điểm, mục tiêu 20–40 POI/điểm) |
 
 ## 11. Đầu ra chuyển sang GĐ2
 
