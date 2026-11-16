@@ -9,15 +9,16 @@ Repository chứa tài liệu theo từng giai đoạn để AI coding agent (Cl
 | # | Giai đoạn | Thư mục | Skill | Trạng thái |
 |---|---|---|---|---|
 | 1 | Product Discovery | [`docs/01-discovery`](docs/01-discovery) | `trekmate-discovery`, `discovery-showcase` | 🟡 Skill sẵn sàng, chưa chạy |
-| 2 | Design System & Prototype | — | (chưa có) | ⚪ Chưa bắt đầu |
+| 2 | Design System & Prototype | [`docs/02-design`](docs/02-design) | `trekmate-design` | 🟡 Skill sẵn sàng, chưa chạy |
 | 3 | Product Requirements | — | (chưa có) | ⚪ Chưa bắt đầu |
 | 4 | Code | — | — | ⚪ Chưa bắt đầu |
 | 5 | Present & QA | — | — | ⚪ Chưa bắt đầu |
 
-Mỗi giai đoạn có một skill trong `.claude/skills/`. Giai đoạn sau đọc đầu ra của giai đoạn trước, không đọc skill của nó.
+Mỗi giai đoạn có một skill trong `.claude/skills/`. Quy tắc dùng chung cho mọi giai đoạn (cách hỏi, thẻ nguồn, bằng chứng) nằm ở `.claude/skills/_shared/`. Giai đoạn sau đọc đầu ra của giai đoạn trước, không đọc skill của nó.
 
 - Quy ước tài liệu: [`docs/00-process/conventions.md`](docs/00-process/conventions.md)
 - Quyết định đã duyệt: [`docs/00-process/decision-log.md`](docs/00-process/decision-log.md)
+- Câu trả lời của Product Owner: [`docs/00-process/po-answers.md`](docs/00-process/po-answers.md)
 
 ## Stack (đã chốt)
 
