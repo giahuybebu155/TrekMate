@@ -8,7 +8,7 @@ Repository chứa tài liệu theo từng giai đoạn để AI coding agent (Cl
 
 | # | Giai đoạn | Thư mục | Skill | Trạng thái |
 |---|---|---|---|---|
-| 1 | Product Discovery | [`docs/01-discovery`](docs/01-discovery) | `trekmate-discovery` | 🟡 Đang xây skill |
+| 1 | Product Discovery | [`docs/01-discovery`](docs/01-discovery) | `trekmate-discovery`, `discovery-showcase` | 🟡 Skill sẵn sàng, chưa chạy |
 | 2 | Design System & Prototype | — | (chưa có) | ⚪ Chưa bắt đầu |
 | 3 | Product Requirements | — | (chưa có) | ⚪ Chưa bắt đầu |
 | 4 | Code | — | — | ⚪ Chưa bắt đầu |
