@@ -9,7 +9,7 @@ Tạo một nhóm nhỏ persona đủ khác nhau để dẫn dắt thiết kế 
 ## Đầu vào
 
 - `01-problem.md` (nếu có) hoặc ngữ cảnh tương đương trong `sources/`.
-- Các persona hoặc nhóm người dùng đã được nêu trong nguồn và trong `po-answers.md`.
+- Các persona hoặc nhóm người dùng đã được nêu trong nguồn và trong `docs/00-process/po-answers.md`.
 - `decision-log.md`: persona nào được ưu tiên, phạm vi thị trường.
 - Kết quả phỏng vấn hoặc khảo sát thật nếu có.
 

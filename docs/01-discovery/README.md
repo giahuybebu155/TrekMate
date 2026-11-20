@@ -29,6 +29,6 @@ Trạng thái: `Chưa có` · `draft` · `approved`. Bảng này được skill 
 | `sources/scope.md` | DOC | Scope v1.0 |
 | `sources/bao-cao-f5.md` | DOC | Trích báo cáo môn Quản trị dự án phần mềm |
 | `sources/prior-research.md` | INF / PROP | Bản tổng hợp Discovery trước đó (14/11/2026) |
-| `sources/po-answers.md` | STK | Câu trả lời của Product Owner |
+| `../00-process/po-answers.md` | STK | Câu trả lời của Product Owner (mọi giai đoạn) |
 | `sources/discovery-gaps.md` | — | Hàng đợi câu hỏi |
 | `../00-process/decision-log.md` | DEC | Quyết định đã duyệt |

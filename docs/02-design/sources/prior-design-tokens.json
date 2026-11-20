@@ -1,0 +1,90 @@
+{
+  "$schema": "https://design-tokens.github.io/community-group/format/",
+  "$description": "TrekMate design tokens. Nguồn sự thật: docs/02-design/DESIGN.md. Khi sửa file này phải sửa DESIGN.md tương ứng.",
+  "color": {
+    "forest": {
+      "50": { "$value": "#EEF7F1" }, "100": { "$value": "#D5EDDE" }, "200": { "$value": "#A9D9BC" },
+      "300": { "$value": "#74BF94" }, "400": { "$value": "#43A06D" }, "500": { "$value": "#2A8456" },
+      "600": { "$value": "#1F6F4A" }, "700": { "$value": "#185A3C" }, "800": { "$value": "#13462F" },
+      "900": { "$value": "#0D3221" }
+    },
+    "sun": {
+      "50": { "$value": "#FFF8E6" }, "100": { "$value": "#FEEDC0" }, "300": { "$value": "#F9CF63" },
+      "400": { "$value": "#F5B82E" }, "500": { "$value": "#E09E12" }, "700": { "$value": "#8A5D00" }
+    },
+    "stone": {
+      "0": { "$value": "#FFFFFF" }, "50": { "$value": "#F7F8F6" }, "100": { "$value": "#EEF0EC" },
+      "200": { "$value": "#DDE1DB" }, "400": { "$value": "#9AA39B" }, "600": { "$value": "#5B665E" },
+      "900": { "$value": "#1A2620" }
+    },
+    "red": { "50": { "$value": "#FDEDEC" }, "600": { "$value": "#C8372D" } },
+    "blue": { "50": { "$value": "#EAF1FC" }, "600": { "$value": "#2563C9" } },
+    "day": {
+      "1": { "$value": "#1F6F4A" }, "2": { "$value": "#2563C9" }, "3": { "$value": "#C2410C" },
+      "4": { "$value": "#7C3AED" }, "5": { "$value": "#0E7490" }
+    }
+  },
+  "semantic": {
+    "light": {
+      "background": "{color.stone.50}",
+      "surface": "{color.stone.0}",
+      "foreground": "{color.stone.900}",
+      "muted": "{color.stone.100}",
+      "muted-foreground": "{color.stone.600}",
+      "border": "{color.stone.200}",
+      "input": "{color.stone.200}",
+      "primary": "{color.forest.600}",
+      "primary-hover": "{color.forest.700}",
+      "primary-foreground": "#FFFFFF",
+      "accent": "{color.sun.400}",
+      "accent-hover": "{color.sun.500}",
+      "accent-foreground": "{color.forest.900}",
+      "ai-surface": "{color.sun.50}",
+      "ai-border": "{color.sun.300}",
+      "ai-foreground": "{color.sun.700}",
+      "success": "{color.forest.600}",
+      "destructive": "{color.red.600}",
+      "destructive-surface": "{color.red.50}",
+      "info": "{color.blue.600}",
+      "info-surface": "{color.blue.50}",
+      "ring": "{color.forest.600}"
+    },
+    "dark": {
+      "$description": "Để dành, chưa dùng ở MVP",
+      "background": "#0F1712", "surface": "#16211A", "foreground": "#E8EEE9",
+      "muted-foreground": "#9DAAA0", "border": "#2A3830",
+      "primary": "{color.forest.400}", "primary-foreground": "{color.forest.900}",
+      "accent": "{color.sun.400}", "accent-foreground": "{color.forest.900}",
+      "ai-surface": "#2A2412", "ai-border": "#6B5418",
+      "destructive": "#F0675E", "info": "#6EA0F0", "ring": "{color.forest.300}"
+    }
+  },
+  "font": {
+    "family": { "sans": "\"Be Vietnam Pro\", system-ui, -apple-system, \"Segoe UI\", Roboto, sans-serif" },
+    "scale": {
+      "display": { "size": "36px", "lineHeight": "44px", "weight": 700, "mobileSize": "30px", "mobileLineHeight": "38px" },
+      "h1": { "size": "28px", "lineHeight": "36px", "weight": 700, "mobileSize": "24px", "mobileLineHeight": "32px" },
+      "h2": { "size": "22px", "lineHeight": "30px", "weight": 600 },
+      "h3": { "size": "18px", "lineHeight": "26px", "weight": 600 },
+      "body-lg": { "size": "16px", "lineHeight": "24px", "weight": 400 },
+      "body": { "size": "14px", "lineHeight": "22px", "weight": 400 },
+      "label": { "size": "14px", "lineHeight": "20px", "weight": 500 },
+      "caption": { "size": "12px", "lineHeight": "16px", "weight": 500 }
+    }
+  },
+  "space": { "0": "0px", "1": "4px", "2": "8px", "3": "12px", "4": "16px", "5": "20px", "6": "24px", "8": "32px", "10": "40px", "12": "48px", "16": "64px" },
+  "radius": { "sm": "8px", "md": "12px", "lg": "16px", "xl": "24px", "full": "9999px" },
+  "shadow": {
+    "sm": "0 1px 2px rgba(16,40,28,.06)",
+    "md": "0 4px 12px rgba(16,40,28,.08)",
+    "lg": "0 12px 32px rgba(16,40,28,.12)"
+  },
+  "overlay": { "image": "linear-gradient(180deg, rgba(0,0,0,0) 40%, rgba(0,0,0,.65) 100%)" },
+  "breakpoint": { "sm": "640px", "md": "768px", "lg": "1024px", "xl": "1280px" },
+  "layout": { "containerMax": "1200px", "readingMax": "720px", "gutterMobile": "16px", "gutterTablet": "24px", "gutterDesktop": "32px", "touchTarget": "44px" },
+  "motion": {
+    "duration": { "fast": "120ms", "base": "200ms", "slow": "320ms" },
+    "easing": { "out": "ease-out", "in": "ease-in", "sheet": "cubic-bezier(.2,.8,.2,1)" }
+  },
+  "zIndex": { "base": 0, "sticky": 10, "header": 20, "dropdown": 30, "sheet": 40, "modal": 50, "toast": 60 }
+}

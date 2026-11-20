@@ -1,6 +1,6 @@
 # Quy ước tài liệu
 
-> Áp dụng cho mọi tài liệu trong `docs/`. Quy tắc về bằng chứng và loại nguồn nằm ở `.claude/skills/trekmate-discovery/synthesis-contract.md`, không lặp lại ở đây.
+> Áp dụng cho mọi tài liệu trong `docs/`. Quy tắc về bằng chứng và loại nguồn nằm ở `.claude/skills/_shared/synthesis-contract.md`, không lặp lại ở đây.
 
 ## Front matter
 
@@ -26,7 +26,16 @@ updated: 2026-11-16
 | Quyết định | `D-n` | D-7 |
 | Chỉ số | `KPI-n` | KPI-2 |
 
-ID đã cấp không dùng lại cho thứ khác. Bỏ một mục thì gạch đi (`~~…~~`) và ghi lý do. Các giai đoạn sau sẽ bổ sung loại ID của mình (FR, UC, US, màn hình…) khi bắt đầu.
+## Mã định danh dùng ở Giai đoạn 2
+
+| Loại | Mẫu | Ví dụ |
+|---|---|---|
+| Màn hình người dùng / quản trị | `Snn` / `Ann` | S05, A02 |
+| Luồng UX | `FLn` | FL1 |
+| Component | `C-<Tên>` | C-PoiCard |
+| Câu hỏi (gap) | `G-n` (GĐ1), `DG-n` (GĐ2) | DG-1 |
+
+ID đã cấp không dùng lại cho thứ khác. Bỏ một mục thì gạch đi (`~~…~~`) và ghi lý do. Giai đoạn 3 sẽ bổ sung loại ID của mình (FR, UC, US…) khi bắt đầu.
 
 ## Định dạng
 

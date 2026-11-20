@@ -9,7 +9,7 @@ Gói Problem, Personas và Market thành một hướng đi rõ ràng: tầm nh�
 ## Đầu vào
 
 - `01-problem.md`, `02-personas.md`, `03-market.md` (hoặc ngữ cảnh tương đương trong `sources/`).
-- `po-answers.md`: mục tiêu dài hạn, mong muốn của Product Owner.
+- `docs/00-process/po-answers.md`: mục tiêu dài hạn, mong muốn của Product Owner.
 - `decision-log.md`: thị trường, nền tảng, phạm vi MVP, cam kết miễn phí hoặc thu phí.
 
 ## Đầu ra: `04-vision.md`
