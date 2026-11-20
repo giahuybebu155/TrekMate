@@ -11,3 +11,6 @@
 | D7 (sửa) | 14/11/2026 | Làm website trước, desktop-first, responsive; app mobile để sau | Theo yêu cầu PO | PO ✅ |
 | D-JTBD | 16/11/2026 | Dùng JTBD cổ điển ("Khi…, tôi muốn…, để…"), không dùng AJTBD | Đơn giản, đủ để truy vết tính năng cho đồ án | PO ✅ |
 | D-BM | 16/11/2026 | Mô hình kinh doanh Freemium: miễn phí cơ bản, gói Premium trả phí. Ranh giới Free/Premium sẽ chốt trong Blueprint | Theo lựa chọn PO (G-2) | PO ✅ |
+| D0.3 (sửa) | 16/11/2026 | MVP gồm M1, M2, M3, **M4**, M5, M7 và tính năng **comment dưới chuyến đi**; sau MVP: M6, M8, M9, M10, M11 | Theo yêu cầu PO; M4 có trong báo cáo, comment chuyến đi là tính năng mới | PO ✅ |
+| D7 (sửa lần 2) | 16/11/2026 | Website responsive, thiết kế **mobile-first**; không desktop-first; không làm app riêng | Theo yêu cầu PO; thay D7 (sửa) ngày 14/11 | PO ✅ |
+| D-GĐ2 | 16/11/2026 | Prototype là file HTML/React trong repo; elicitation và synthesis-contract dùng chung tại `.claude/skills/_shared/`; bản nháp design cũ làm nguồn | Theo khuyến nghị, PO đồng ý | PO ✅ |
