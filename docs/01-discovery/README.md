@@ -4,23 +4,25 @@ Tài liệu trong thư mục này được tạo và cập nhật bằng skill `
 
 ## Cách chạy
 
-Trong Claude Code, tại thư mục repo:
-- Chạy toàn bộ: "chạy discovery cho TrekMate".
+Trong Cursor hoặc Claude Code, tại thư mục repo:
+- Chạy toàn bộ: "chạy discovery cho TrekMate" / "chạy giai đoạn 1".
 - Cập nhật một chủ đề: "cập nhật persona", "cập nhật đối thủ", "cập nhật MVP scope"…
 
 ## Độ phủ chủ đề
 
 | Chủ đề | File | Trạng thái | Mức tin cậy chính | Khoảng trống lớn nhất |
 |---|---|---|---|---|
-| Problem | `01-problem.md` | Chưa có | — | — |
-| Personas | `02-personas.md` | Chưa có | — | G-5 |
-| Market | `03-market.md` | Chưa có | — | — |
-| Vision | `04-vision.md` | Chưa có | — | G-1, G-3 |
-| Solution Blueprint + Business Model | `05-blueprint.md` | Chưa có | — | — |
-| Journey & Features | `06-journey-features.md` | Chưa có | — | — |
-| Roadmap | `07-roadmap.md` | Chưa có | — | — |
+| Problem | `01-problem.md` | draft | trung bình | A-UR, G-3 |
+| Personas | `02-personas.md` | draft | thấp–trung bình | A-UR |
+| Market | `03-market.md` | draft | cao (đối thủ) / thấp (WTP) | willingness-to-pay |
+| Vision | `04-vision.md` | draft | thấp | G-1, G-3 |
+| Solution Blueprint + Business Model | `05-blueprint.md` | draft | cao (giải pháp) / thấp (thu phí) | G-7 |
+| Journey & Features | `06-journey-features.md` | draft | trung bình | G-6 |
+| Roadmap | `07-roadmap.md` | draft | thấp (tiến độ) | G-1, hạn đồ án |
 
 Trạng thái: `Chưa có` · `draft` · `approved`. Bảng này được skill cập nhật sau mỗi lần chạy.
+
+V1 ngày 21/11/2026. Đối chiếu cặp chủ đề: Problem↔Personas, Personas↔Journey, Market↔Vision, Vision↔Blueprint, Blueprint↔Roadmap, tất cả↔decision-log — không mâu thuẫn DEC; G-6/G-7 đánh dấu chỗ chưa chốt.
 
 ## Nguồn
 
